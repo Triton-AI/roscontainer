@@ -12,7 +12,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 # Getting Base image (ubuntu 20.04)
 # --------------------------------------------------------------------------------------------------------------------------------------------------
-FROM ghcr.io/ucsd-ecemae-148/donkeycontainer:utils
+FROM ghcr.io/triton-ai/donkeycontainer:utils
 
 ####### CREATE VIRTUAL ENVIRONMENTS #######
 RUN echo "alias python=python3" >> ~/.bashrc

@@ -1,4 +1,4 @@
-FROM ghcr.io/ucsd-ecemae-148/donkeycontainer:cv2 AS cv2
+FROM ghcr.io/triton-ai/donkeycontainer:cv2 AS cv2
 
 ############## INSTALL BASIC UTILITIES #############
 RUN apt-get -y update && apt-get install -y --no-install-recommends \

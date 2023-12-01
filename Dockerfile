@@ -1,4 +1,4 @@
-FROM ghcr.io/ucsd-ecemae-148/donkeycontainer:ros AS ros
+FROM ghcr.io/triton-ai/donkeycontainer:ros AS ros
 
 WORKDIR /home/projects/
 
@@ -15,7 +15,7 @@ RUN git clone https://github.com/sisaha9/donkeycar.git -b sid_devel && \
 
 ################ PYVESC ##################
 RUN source ${VIRTUAL_ENV}/donkey/bin/activate && \
-    pip3 install --no-cache git+https://github.com/UCSD-ECEMAE-148/PyVESC.git@master
+    pip3 install --no-cache git+https://github.com/triton-ai/PyVESC.git@master
 
 ################ DEPTHAI ##################
 WORKDIR /home/projects/
